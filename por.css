@@ -1,0 +1,60 @@
+*{
+	margin:0;
+	padding:0;
+
+}
+.headline{
+	width: 100%;
+	background:brown;
+	position: fixed;
+}
+.topic a{
+	color: black;
+	font-size: 40px;
+}
+
+h4{
+	float: right;
+	list-style-type: none;
+	margin-top:-5px;
+}
+
+
+h4 li{
+	display:inline-block;
+}
+h4 li a{
+	font-size: 20px;
+	text-decoration:none;
+	color:white;
+	padding:5px 20px;
+	border:1px solid transparent;
+	transition: 0.6s ease;
+
+}
+h4 li a:hover{
+	background-color:white;
+	color:black;
+}
+h4 li.active a{
+	background-color: white;
+	color:black;
+}
+.about{
+	text-align: center;
+	font-size: 30px;
+	top: 13%;
+	left: 13%;
+	right: 20%;
+	position: absolute;
+}
+image{
+	display: inline-flex;
+}
+.size{
+	width: 500px;
+	height: 450px;
+	margin-top: 160px;
+	margin-left: 10px;
+	padding: 30px;
+}

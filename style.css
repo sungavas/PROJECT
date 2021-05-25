@@ -1,0 +1,110 @@
+*{
+	margin:0;
+	padding:0;
+	user-select:none;
+}
+body{
+	background-image:url(contact.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	backface-visibility: 30%;
+
+
+	
+}
+.container{
+	width:50%;
+	max-width: 600px;
+	margin:100px ;
+	box-sizing: border-box;
+	color: pink;
+}
+.content{
+	text-align:center;
+}
+.content h1{
+	letter-spacing: 1px;
+	font-size: 40px;
+}
+
+}
+.form {
+	width:100%;
+	margin:25px 0;
+	text-align: left;
+}
+.top-form,.middle-form,{
+	width:50%;
+  min-height: 20px;
+  margin:10px 0;
+ 
+}
+.bottom{
+	width:20%;
+	min-height: 30px;
+
+	
+}
+.form input[type="text"],
+.form textarea{
+	padding: 15px 5px;
+	width:100%;
+	box-sizing: border-box;
+	border:2px solid #7665;
+	transition:0.2s ease;
+}
+.form.label{
+	margin-bottom: 5px;
+	text-transform: capitalize;
+
+}
+.bottom-form textarea{
+	height:700px;
+}
+.btn{
+	background: #4ca1af;
+	width:200px;
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	color:purple;
+	letter-spacing: 5px;
+
+}
+h2{
+	float:right;
+	list-style-type: none;
+	margin-top: -80px;
+}
+
+
+h2 li{
+	display:inline-block;
+}
+h2 li a{
+	font-size: 20px;
+	text-decoration:none;
+	color:white;
+	padding:5px 20px;
+	border:1px solid transparent;
+	transition: 0.6s ease;
+
+}
+h2 li a:hover{
+	background-color:white;
+	color:black;
+}
+h2 li.active a{
+	background-color: white;
+	color:black;
+}
+image{
+	display: inline-flex;
+}
+.size{
+	width: 215px;
+	height: 250px;
+	margin-top: 30px;
+	margin-left: 50%;
+}
