@@ -1,48 +1,24 @@
 
 *{
-	margin:0;
+	margin-top:0;
 	padding:0;
 }
 body {
 	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images.jpg);
-	height:100vh;
+	height: 90vh;
 	background-size:cover;
 	background-position:center;
 	font-size: 20px;
+	
 }
 
-.container {
-  display: inline-block;
-  cursor: pointer;
-}
-
-.btn1, .btn2, .btn3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 2px;
-  transition: 0.4s;
-  align-items: center;
-}
-
-
-.change .btn1 {
-  align-items: center;
-}
-
-
-.change .btn2 {
-  align-items: center;
-}
-
-.change .btn3 {
-  align-items: center;
-}
 /* styling of menu webpage*/
 ul{
 	float: right;
 	list-style-type: none;
-	margin-top: -10px;
+	margin-top:-30px;
+	position: absolute;
+	margin-left: 60%;
 }
 
 
@@ -72,13 +48,21 @@ ul li.active a{
 	max-width: 1500px;
 	margin: left;
 }
-a{
-	font-size:40px;
-	padding-left: 20px;
-	color:antiquewhite;
+
+
+.topic a{
+	color: whitesmoke;
+	font-size: 50px;
+
 }
+
+
 h2{
-	font-size:50px;
+	font-size:40px;
+	align-items: center;
+	margin-top: 12%;
+	margin-left: 33%;
+	color: palevioletred;
 }
 .title{
 	position:absolute;
@@ -90,17 +74,19 @@ h2{
 .title h3{
 	color:white;
 	font-size: 40px;
+
 }
  p{
 	color:pink;
 	font-size: 30px;
 	text-align: center;
 	top: 55%;
+	margin-left:5%;
 }
 
 .button{
 	position:absolute;
-	top:70%;
+	top:65%;
 	left:50%;
 	transform: translate(-50%,-50%);
 }
@@ -115,5 +101,4 @@ h2{
 .btn:hover{
 	background-color:white;
 	color:purple;
-
 }

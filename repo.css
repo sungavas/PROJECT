@@ -4,23 +4,24 @@
 
 }
 body{
-	background-color:lightgrey;
-	height: initial;
-}
-.headline{
-	width: 100%;
-	background:green;
-	position: fixed;
+	background-color:palevioletred;
+	padding: 20px;
+	margin-left: 5%;
+	margin-right:5% ;
+
+
+	
 }
 .topic a{
 	color: black;
 	font-size: 40px;
 }
-
 h1{
 	float: right;
 	list-style-type: none;
-	margin-top:-20px;
+	margin-top:-50px;
+	position: absolute;
+	margin-left:50%
 }
 
 
@@ -43,33 +44,27 @@ h1 li a:hover{
 h1 li.active a{
 	background-color: white;
 	color:black;
+
 }
 h2{
-	text-align: center;
-	font-size: 50px;
-	top: 13%;
-	left: 13%;
-	right: 20%;
-	position: absolute;
+	margin-left: 30%;
+	margin-right: 30%;
+	font-size: 35px;
+}
+p{
+	font-size: 20px;
+	font-style: var(Arial);
 
-} 
-header p{
- 	text-align:justify;
-      font-size: 23px;
-      position: absolute;
-      top: 25% ;
+}
+li{
+	font-size: 30px;
 
- }
- section p{
- 	text-align:justify;
-      font-size: 23px;
-      position: absolute;
-      top: 50% ;
- }
- main p{
- 	text-align:justify;
-      font-size: 23px;
-      position: absolute;
-      top: 80% ;
+}
+b{
+	font-size: 25px;
+}
+br{
+	font-size: 20px;
+	margin-right: 5%;
 
- }
+}
