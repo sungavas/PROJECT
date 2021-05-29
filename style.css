@@ -3,17 +3,16 @@
 	padding:0;
 	user-select:none;
 }
+/*styling body*/ 
 body{
 	background-image:url(contact.jpg);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
-	backface-visibility: 30%;
-
-
-	
+	backface-visibility: 30%;	
 }
-.container{
+
+.headline{
 	width:50%;
 	max-width: 600px;
 	margin:100px ;
@@ -54,7 +53,7 @@ body{
 	border:2px solid #7665;
 	transition:0.2s ease;
 }
-.form.label{
+.form a{
 	margin-bottom: 5px;
 	text-transform: capitalize;
 
@@ -72,17 +71,17 @@ body{
 	letter-spacing: 5px;
 
 }
-h2{
+menu{
 	float:right;
 	list-style-type: none;
 	margin-top: -80px;
 }
 
 
-h2 li{
+menu li{
 	display:inline-block;
 }
-h2 li a{
+menu li a{
 	font-size: 20px;
 	text-decoration:none;
 	color:white;
@@ -91,11 +90,11 @@ h2 li a{
 	transition: 0.6s ease;
 
 }
-h2 li a:hover{
+menu li a:hover{
 	background-color:white;
 	color:black;
 }
-h2 li.active a{
+menu li.active a{
 	background-color: white;
 	color:black;
 }
