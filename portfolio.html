@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<title>portfolio page</title>
 	<link rel="stylesheet"  type="text/css" href="por.css">
 </head>
@@ -8,14 +9,18 @@
 	<div class="headline"><!--Headline of the report-->
 		<div class="topic"><a href="#">Portfo<span>lio.</span></a>
 		</div> 
-		    <menu><!--This is the menu of page-->
-			 <li><a href="index.html">Home</a></li>
-		     <li class="active"><a href="#">Portfolio</a></li>
-		     <li><a href="contact.html">Contact</a></li>
-			 <li><a href="cv.html">CV</a></li>
-			 <li><a href="Sitereport.html">Sitereport</a></li>
-		    </menu>   
-	</div>
+		<nav class='menu'>
+     <input checked='checked' class='menu-toggler' id='menu-toggler' type='checkbox'>
+      <label for='menu-toggler'></label>
+           <ul> 
+		    <!--This is the menu of page-->
+			 <li class="menu-item"><a href="index.html">Home</a></li>
+		     <li class="menu-item"><a href="#">Portfolio</a></li>
+		     <li class="menu-item"><a href="contact.html">Contact</a></li>
+			 <li class="menu-item"><a href="cv.html">Cv</a></li>
+			 <li class="menu-item"><a href="Sitereport.html">Sitereport</a></li>
+		    </ul>  
+	</nav>
 	<div class="header"><!--This describe for placeholder images-->
 		<P>These images are for placeholder purposes only,when I do my asssignment in term (II), This will be replaced.</P>
     </div>
@@ -23,6 +28,7 @@
     	<img src="port.webp" alt="placeholder1 lul" class="size">
     	<img src="folio.jpg" alt="placeholder2 lul"  class="size">
     </div>
+</div>
 </body>
 </html>
     
