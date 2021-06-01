@@ -1,10 +1,9 @@
-
-
 *{
 	margin-top: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+/*styling the body of page*/
 body{
 	display: flex;
 	min-height: 60vh;
@@ -14,7 +13,8 @@ body{
 	align-items: center;
 
 }
-@media screen and (max-width: 500px);
+/*media queries*/
+@media screen and (max-width: 1500px){
 .menu-toggler {
   width:40px;
   height: 40px;
@@ -59,12 +59,13 @@ body{
   border-radius: 2.5px;
   
 }
+
 .menu-toggler + label:before {
   top: 10px;
 }
 .menu-toggler + label:after {
   top: -10px;
-}
+}/*top is given 10px,-10px*/
 .menu-toggler:hover + label, .menu-toggler:hover + label:before, .menu-toggler:hover + label:after {
   background: white;
 }
@@ -75,7 +76,7 @@ body{
   bottom: 0;
   right: 0;
   left:80%;
-  margin-top: 10%;
+  margin-top: 12%;
   width: 50px;
   height: 50px;
   display: block;
@@ -86,7 +87,7 @@ body{
 
 .main{
   max-width: 1500px;
-  margin: left;
+  margin-left: 1px;
 }
 
 
@@ -95,6 +96,7 @@ body{
   font-size: 50px;
 
 }
+
 .menu-item a {
   color: whitesmoke;
   background: black;
@@ -110,7 +112,7 @@ body{
   line-height: 80px;
   
 }
-
+/*transform menu item*/
 .menu-item:nth-child(1) a {
   transform: rotate(0deg);
 }
@@ -140,6 +142,7 @@ body{
   background: rgba(255, 255, 255, 0.3);
   font-size: 44px;
 }
+/*transfrom menu toogler*/
 .menu-toggler:checked + label:before, .menu-toggler:checked + label:after {
   top: 0;
   width: 40px;
@@ -154,7 +157,7 @@ body{
  
 .menu-toggler:checked ~ ul .menu-item {
   opacity: 1;
-}
+}/*opacity is 1 of menu toggler*/
 .menu-toggler:checked ~ ul .menu-item:nth-child(1) {
   transform: rotate(0deg) translateX(-90px);
 }
@@ -177,7 +180,8 @@ body{
   pointer-events: auto;
 }
 
-
+}
+/*content of the page*/
 .container{
 	position: relative;
 	margin: 90px;
@@ -192,6 +196,7 @@ body{
    
    
 }
+/*styling left side of page*/
 .left_side{
 	background: darkcyan;
 	position: relative;
@@ -238,9 +243,8 @@ li{
 	display: block;
 	margin-top: 5px;
 
-
-
 }
+/*styling right side of page*/
 .right_side{
 
 	position: relative;
@@ -253,5 +257,4 @@ menu{
 	font-size: 20px;
 	padding: 20px;
 
-
-}
+}/* position of menu are relative fontsize and padding is 20px*/

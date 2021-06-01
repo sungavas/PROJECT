@@ -3,6 +3,7 @@
 	padding:0;
 
 }
+/*styling body of page*/ 
 body{
 	background-color:palevioletred;
 	padding: 20px;
@@ -13,7 +14,8 @@ body{
 
 	
 }
-@media screen and (max-width: 500px);
+/*media queries*/
+@media screen and (max-width: 1500px){
 .menu-toggler {
   margin-top:40px;
   width:40px;
@@ -27,7 +29,7 @@ body{
   left: 90%;
   
  
-}
+}/*maintaining menu item*/
 .menu-toggler + label {
   background: burlywood;
   transition: transform 0.5s, top 0.5s;
@@ -65,7 +67,7 @@ body{
 }
 .menu-toggler:hover + label, .menu-toggler:hover + label:before, .menu-toggler:hover + label:after {
   background: white;
-}
+}/*maintaining menu bars*/
 .menu-item {
   position: absolute;
   display: block;
@@ -73,7 +75,7 @@ body{
   bottom: 0;
   right: 0;
   left:80%;
-  margin-top: 10%;
+  margin-top: 12%;
   width: 50px;
   height: 50px;
   display: block;
@@ -84,8 +86,8 @@ body{
 
 .main{
 	max-width: 1500px;
-	margin: left;
-}
+	margin-left: 1px;
+}/*margin and width are given for main*/ 
 
 
 .topic a{
@@ -108,7 +110,7 @@ body{
   color: white;
   
 }
-
+/*transforming menu item*/
 .menu-item:nth-child(1) a {
   transform: rotate(0deg);
 }
@@ -132,6 +134,7 @@ body{
 .menu-item:nth-child(6) a {
   transform: rotate(-150deg);
 }
+
 .menu-item a:hover {
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
   color: white;
@@ -143,6 +146,7 @@ body{
   width: 40px;
   transform-origin: 50% 50%;
 }
+/*transforming rotate */
 .menu-toggler:checked + label:before {
   transform: rotate(30deg);
 }
@@ -174,6 +178,7 @@ body{
 .menu-toggler:checked ~ ul .menu-item a {
   pointer-events: auto;
 }
+}
 .topic a{
 	color: black;
 	font-size: 40px;
@@ -186,12 +191,10 @@ h2{
 }
 p{
 	font-size: 20px;
-	font-style: var(Arial);
 
-}
+}/* font size and style is given*/
 li{
 	font-size: 30px;
-
 }
 b{
 	font-size: 25px;
