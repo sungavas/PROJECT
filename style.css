@@ -1,7 +1,7 @@
 *{
 	margin:0;
 	padding:0;
-	user-select:none;
+	
 }
 /*styling body*/ 
 body{
@@ -11,170 +11,161 @@ body{
 	background-position: center;
 	
 }
-/*This is where menu start*/
-@media screen and (max-width: 1500px){
-.menu-toggler {
-  width:40px;
-  height: 40px;
-  z-index: 2;
-  opacity: 0;
- position: fixed;
-  top:10%;
-  bottom: 0;
-  right:10%;
-  left: 90%;
-  margin-top:40px;
-}
-.menu-toggler + label {
-  background: burlywood;
-  transition: transform 1s, 1s;
-  position: absolute;
-  display: block;
-  top:-90%;
-  bottom: 0;
-  right: 0;
-  left: 90%;
-  margin: auto;
-  width: 40px;
-  height: 5px;  
-  z-index: 1;
-  border-radius: 2.5px;
-}
-/*Styling the bars of menu*/
-.menu-toggler + label:before, .menu-toggler + label:after {
-  background: floralwhite;
-  transition: transform 1s,1s;
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 40px;
-  height: 5px;
-  display: block;
-  z-index: 2;
-  border-radius: 2px;
-  
-}
-.menu-toggler + label:before {
-  top: 10px;
-}
-.menu-toggler + label:after {
-  top: -10px;
-}
-.menu-toggler:hover + label, .menu-toggler:hover + label:before, .menu-toggler:hover + label:after {
-  background: white;
-}
-.menu-item {
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 50px;
-  opacity: 0;
-  transition: 0.5s;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left:80%;
-  margin-top: 13%;
-}
 
+/* header of home page */
 
-.menu-item a {
-  background: black;
-  border-radius: 50%;
-  text-align: center;
-  text-decoration: none;
+.header {
+  background-color: grey;
+  width: 100%;
+  z-index: 3;
+  margin-top: 1px;
   font-size: 20px;
-  pointer-events: none;
-  transition: 0.2s;
+  position: fixed;
+}
+/*logo of the page*/
+.header .logo {
   display: block;
-  width: inherit;
-  height: inherit;
-  line-height: 80px;
-  color: floralwhite;
+  float: left;
+  color: white;
+  padding: 10px 20px;
+  font-size: 30px;
+  text-decoration: none;
+}
+.header ul {
+  background-color: skyblue;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: skyblue;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: floralwhite;
+}
+
+
+
+/* menu of the page */
+
+.header .menu {
+  max-height: 0;
+  clear: both;
+  transition: max-height .2s ease-out;
+}
+
+/* icon  of the page*/
+
+.header .menu-icon {
+  cursor: pointer;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+  display: inline-block;
+  float: right;
+
+
+}
+/*styling navicon*/
+.header .menu-icon .navicon {
+  background: black;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+  display: block;
+  height: 2px;
   
 }
-/*maintaining menu item*/
-.menu-item:nth-child(1) a {
-  transform: rotate(0deg);
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background:black;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
 }
- 
-.menu-item:nth-child(2) a {
-  transform: rotate(-30deg);
+
+.header .menu-icon .navicon:before {
+  top: 6px;
 }
- 
-.menu-item:nth-child(3) a {
-  transform: rotate(-60deg);
+
+.header .menu-icon .navicon:after {
+  top: -6px;
 }
- 
-.menu-item:nth-child(4) a {
-  transform: rotate(-90deg);
+
+/* menu btn of menu */
+
+.header .menu-btn {
+  display: none;
 }
- 
-.menu-item:nth-child(5) a {
-  transform: rotate(-120deg);
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
 }
- 
-.menu-item:nth-child(6) a {
-  transform: rotate(-150deg);
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
 }
-.menu-item a:hover {
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
-  color: white;
-  background: rgba(255, 255, 255, 0.3);
-  font-size: 44px;
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
 }
-.menu-toggler:checked + label:before, .menu-toggler:checked + label:after {
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
-  width: 40px;
-  transform-origin: 50% 50%;
-}/*Transfrom menu toggler*/ 
-.menu-toggler:checked + label:before {
-  transform: rotate(30deg);
 }
-.menu-toggler:checked + label:after {
-  transform: rotate(-30deg);
+
+/*media queries*/
+@media (min-width: 750px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+     max-height: none;
+     clear: none;
+    float: right;
+  }
+  .header .menu-icon {
+    display: none;
+  }
 }
- 
-.menu-toggler:checked ~ ul .menu-item {
-  opacity: 1;
-}
-.menu-toggler:checked ~ ul .menu-item:nth-child(1) {
-  transform: rotate(0deg) translateX(-90px);
-}
-.menu-toggler:checked ~ ul .menu-item:nth-child(2) {
-  transform: rotate(30deg) translateX(-90px);
-}
-.menu-toggler:checked ~ ul .menu-item:nth-child(3) {
-  transform: rotate(60deg) translateX(-90px);
-}
-.menu-toggler:checked ~ ul .menu-item:nth-child(4) {
-  transform: rotate(90deg) translateX(-90px);
-}
-.menu-toggler:checked ~ ul .menu-item:nth-child(5) {
-  transform: rotate(120deg) translateX(-90px);
-}
-.menu-toggler:checked ~ ul .menu-item:nth-child(6) {
-  transform: rotate(150deg) translateX(-90px);
-}
-.menu-toggler:checked ~ ul .menu-item a {
-  pointer-events: auto;
-}
-}/*media queries*/
-/* Infrasrructure of box*/
-.headline{
-	width:50%;
-	max-width: 600px;
-	margin:100px ;
-	box-sizing: border-box;
-	color: pink;
-}
+/* Infrastructure of box*/
+
 .content{
 	text-align:center;
+  width: 50%;
+  padding: 90px;
+  font-size: 20px;
+
 }/*text is in center*/
-.content h1{
-	letter-spacing: 1px;
-	font-size: 40px;
+
+.content b{
+  color: pink;
 }
+
+
+h1{
+  color: lightblue;
+}/*color is lightblue of h1*/
 
 /* form of webpage is given multi-line*/
 .form {
@@ -200,7 +191,7 @@ body{
 	border:2px solid #7665;
 	transition:0.2s ease;
 }
-.form a{
+.form b{
 	margin-bottom: 5px;
 	text-transform: capitalize;
 
@@ -222,7 +213,7 @@ body{
 
 image{
 	display: inline-flex;
-}
+}/* image display is inline-flex*/
 .size{
 	width: 150px;
 	height: 250px;
