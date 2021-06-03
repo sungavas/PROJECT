@@ -16,6 +16,7 @@ body{
   width: 100%;
   z-index: 3;
   height: 70px;
+  margin: -5px;
   position: fixed;
 }
 /*logo of page*/
