@@ -6,6 +6,7 @@
 /*styling body*/ 
 body{
 	background-image:url(contact.jpg);
+  /*above image is download from iStock Website*/
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
@@ -13,7 +14,7 @@ body{
 }
 
 /* header of home page */
-
+/*below icon code is use from Codepen website*/
 .header {
   background-color: grey;
   width: 100%;

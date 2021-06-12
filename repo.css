@@ -6,7 +6,7 @@
 /*styling body of page*/ 
 body{
 	background-color:palevioletred;
-	font:lighter;
+	
 }
 /*header of home page*/
 .header {
@@ -154,7 +154,10 @@ section{
 	color: black;
 	font-size: 40px;
 }
+#referencing{
+  margin-right: 10%;
 
+}
 h2{
 	margin-left: 30%;
 	margin-right: 30%;
@@ -165,13 +168,12 @@ p{
 
 }/* font size and style is given*/
 li{
-	font-size: 30px;
+	font-size: 35px;
 }
 b{
 	font-size: 25px;
 }
 br{
 	font-size: 20px;
-	margin-right: 5%;
 
 }
