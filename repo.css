@@ -6,6 +6,7 @@
 /*styling body of page*/ 
 body{
 	background-color:palevioletred;
+
 	
 }
 /*header of home page*/
@@ -149,15 +150,13 @@ body{
 }
 /*styling section*/
 section{
-  padding: 80px;
+  padding: 60px;
+
+
 }
 .topic a{
 	color: black;
 	font-size: 40px;
-}
-#referencing{
-  margin-right: 10%;
-
 }
 h2{
 	margin-left: 30%;
@@ -176,5 +175,6 @@ b{
 }
 br{
 	font-size: 20px;
+  position: initial;
 
 }
