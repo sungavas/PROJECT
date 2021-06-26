@@ -154,7 +154,7 @@ section div:first-child{
   padding:50px;
   float: left;
   width: 50%;
-  margin-top: 10%;
+  margin-top: 7%;
 }
 h2{
   color: black;
@@ -194,10 +194,10 @@ li{
 }
 /*styling section*/
 section div:nth-child(2){
-  padding: 70px;
+  padding: 57px;
   background: lightblue;
   float: left;
-  margin-top: 10%;
+  margin-top: 7%;
   width: 50%;
 }
 menu{
