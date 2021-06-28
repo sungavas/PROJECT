@@ -5,8 +5,8 @@
 }
 /*styling body of page*/ 
 body{
-	background-color:palevioletred;
-
+	background-color: rgba(0,128,128,0.79);
+  color: black;
 	
 }
 /*header of sitereport page*/
@@ -150,7 +150,7 @@ body{
 }
 /*styling section*/
 section{
-  padding: 60px;
+  padding: 70px;
 
 
 }

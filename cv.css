@@ -1,13 +1,15 @@
 *{
-	margin-top: 0;
-	padding: 0;
+  margin-top: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 /*styling the body of page*/
 body{
+  background-image:url(images3.jpeg);
+  height: 90vh;
+  background-size:cover;
+  background-position:center;
   width: 100%;
-  background-color:grey;
-  
 }
 
 /*header of cv page*/
@@ -150,7 +152,7 @@ body{
 }
 /*styling section of page*/
 section div:first-child{
-  background: palevioletred;
+  background: rgba(172,230,191,0.39);
   padding:50px;
   float: left;
   width: 50%;
@@ -195,10 +197,12 @@ li{
 /*styling section*/
 section div:nth-child(2){
   padding:80px;
-  background: lightblue;
+  background: rgba(191,172,230,0.46);
   float: left;
+  margin-left: 0px;
   margin-top: 7%;
   width: 50%;
+
 }
 menu{
   position: relative;
