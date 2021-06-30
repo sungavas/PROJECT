@@ -158,6 +158,16 @@ section div:first-child{
   width: 50%;
   margin-top: 7%;
 }
+p{
+  font-size: 20px;
+  border-bottom: 2px solid;
+
+}
+b{
+  font-size: 18px;
+
+}
+
 h2{
   color: black;
   font-size: 25px;
@@ -197,7 +207,7 @@ li{
 /*styling section*/
 section div:nth-child(2){
   padding:80px;
-  background: rgba(191,172,230,0.46);
+  background:rgba(191,172,230,0.46);
   float: left;
   margin-left: 0px;
   margin-top: 7%;
