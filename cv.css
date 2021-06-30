@@ -164,7 +164,7 @@ p{
 
 }
 b{
-  font-size: 18px;
+  font-size: 20px;
 
 }
 
@@ -186,6 +186,7 @@ h3{
   letter-spacing: 1px;
   font-weight: 600;
   text-transform: uppercase;
+  border-bottom: 2px solid;
 }
 h4{
   margin-bottom: 20px;
@@ -194,7 +195,7 @@ h4{
   font-size: 17px;
 }
 li{
-  font-size: 20px;
+  font-size: 23px;
 }
 .percent{
   position: relative;
