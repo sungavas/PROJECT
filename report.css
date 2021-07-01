@@ -153,6 +153,12 @@ section{
 
 
 }
+ul{
+  border-bottom: 2px solid;
+}
+li{
+  font-size: 20px;
+}
 .topic a{
 	color: black;
 	font-size: 40px;
@@ -168,6 +174,7 @@ p{
 }/* font size and style is given*/
 h3{
 	font-size: 30px;
+  border-bottom: 2px solid;
 
 }
 b{
